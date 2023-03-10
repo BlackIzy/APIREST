@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="com.entities.CheckConstraintsEntity">
+        <table name="CHECK_CONSTRAINTS" schema="information_schema" catalog=""/>
+        <attributes>
+            <basic name="constraintCatalog">
+                <column name="CONSTRAINT_CATALOG" precision="-1"/>
+            </basic>
+            <basic name="constraintSchema">
+                <column name="CONSTRAINT_SCHEMA" precision="-1"/>
+            </basic>
+            <basic name="tableName">
+                <column name="TABLE_NAME" precision="-1"/>
+            </basic>
+            <basic name="constraintName">
+                <column name="CONSTRAINT_NAME" precision="-1"/>
+            </basic>
+            <basic name="level">
+                <column name="LEVEL" precision="-1"/>
+            </basic>
+            <basic name="checkClause">
+                <column name="CHECK_CLAUSE" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="com.entities.InnodbCmpResetEntity">
+        <table name="INNODB_CMP_RESET" schema="information_schema" catalog=""/>
+        <attributes>
+            <basic name="pageSize">
+                <column name="page_size" precision="-1"/>
+            </basic>
+            <basic name="compressOps">
+                <column name="compress_ops" precision="-1"/>
+            </basic>
+            <basic name="compressOpsOk">
+                <column name="compress_ops_ok" precision="-1"/>
+            </basic>
+            <basic name="compressTime">
+                <column name="compress_time" precision="-1"/>
+            </basic>
+            <basic name="uncompressOps">
+                <column name="uncompress_ops" precision="-1"/>
+            </basic>
+            <basic name="uncompressTime">
+                <column name="uncompress_time" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="com.entities.ArtisteEntity">
+        <table name="artiste" schema="zfm1-zberteba0_2" catalog=""/>
+        <attributes>
+            <id name="codeArtiste">
+                <column name="code_artiste" precision="1"/>
+            </id>
+            <basic name="pseudo">
+                <column name="pseudo" length="45"/>
+            </basic>
+            <basic name="villeOrigine">
+                <column name="ville_origine" length="45"/>
+            </basic>
+            <basic name="age">
+                <column name="age" precision="11"/>
+            </basic>
+            <basic name="codeGroupe">
+                <column name="code_groupe" nullable="false" precision="1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

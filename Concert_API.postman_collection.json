@@ -1,0 +1,378 @@
+{
+	"info": {
+		"_postman_id": "431cc76a-2d3f-48bb-b68b-56fe89b0e239",
+		"name": "Concert_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Concert",
+			"item": [
+				{
+					"name": "ConcertGetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1010/concerts/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1010",
+							"path": [
+								"concerts",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConcertGETid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1010/concerts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1010",
+							"path": [
+								"concerts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConcertPUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code_concert\" : 1,\r\n    \"date_debut\": \"2023-01-01 20:00:00\",\r\n    \"date_fin\": \"2023-01-01 22:00:00\",\r\n    \"prix\": 12.99\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1010/concerts/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1010",
+							"path": [
+								"concerts",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConcertPOST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date_debut\": \"2023-01-01 20:00:00\",\r\n    \"date_fin\": \"2023-01-01 22:00:00\",\r\n    \"prix\": 20.00,\r\n    \"soiree\": {\r\n            \"code_soiree\": 1,\r\n            \"nom\": \"Soirée 1\",\r\n            \"date\": \"2023-03-01\",\r\n            \"concerts\": null,\r\n            \"salle\": null\r\n        }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1010/concerts/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1010",
+							"path": [
+								"concerts",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConcertDELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1010/concerts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1010",
+							"path": [
+								"concerts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Salle",
+			"item": [
+				{
+					"name": "SalleGETid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1010/salles/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1010",
+							"path": [
+								"salles",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SalleGetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1010/salles/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1010",
+							"path": [
+								"salles",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SallePUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"code_salle\": 1,\r\n        \"nom\": \"Salle A\",\r\n        \"capacite\": 100,\r\n        \"soirees\": null\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1010/salles/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1010",
+							"path": [
+								"salles",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SallePOST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nom\": \"Salle C\",\r\n    \"capacite\": 500,\r\n    \"soirees\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1010/salles/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1010",
+							"path": [
+								"salles",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SalleDELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1010/salles/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1010",
+							"path": [
+								"salles",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Soiree",
+			"item": [
+				{
+					"name": "SoireeGETid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1010/soirees/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1010",
+							"path": [
+								"soirees",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SoireeGetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1010/soirees/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1010",
+							"path": [
+								"soirees",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SoireePUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"code_soiree\": 1,\r\n        \"nom\": \"Go FAST\",\r\n        \"date\": \"2023-03-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1010/soirees/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1010",
+							"path": [
+								"soirees",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SoireePOST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nom\": \"Black-OUT\",\r\n        \"date\": \"2023-03-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1010/soirees/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1010",
+							"path": [
+								"soirees",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SoireeDELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1010/soirees/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1010",
+							"path": [
+								"soirees",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

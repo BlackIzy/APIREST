@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="com.entities.ViewsEntity">
+        <table name="VIEWS" schema="information_schema" catalog=""/>
+        <attributes>
+            <basic name="tableCatalog">
+                <column name="TABLE_CATALOG" precision="-1"/>
+            </basic>
+            <basic name="tableSchema">
+                <column name="TABLE_SCHEMA" precision="-1"/>
+            </basic>
+            <basic name="tableName">
+                <column name="TABLE_NAME" precision="-1"/>
+            </basic>
+            <basic name="viewDefinition">
+                <column name="VIEW_DEFINITION" precision="-1"/>
+            </basic>
+            <basic name="checkOption">
+                <column name="CHECK_OPTION" precision="-1"/>
+            </basic>
+            <basic name="isUpdatable">
+                <column name="IS_UPDATABLE" precision="-1"/>
+            </basic>
+            <basic name="definer">
+                <column name="DEFINER" precision="-1"/>
+            </basic>
+            <basic name="securityType">
+                <column name="SECURITY_TYPE" precision="-1"/>
+            </basic>
+            <basic name="characterSetClient">
+                <column name="CHARACTER_SET_CLIENT" precision="-1"/>
+            </basic>
+            <basic name="collationConnection">
+                <column name="COLLATION_CONNECTION" precision="-1"/>
+            </basic>
+            <basic name="algorithm">
+                <column name="ALGORITHM" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

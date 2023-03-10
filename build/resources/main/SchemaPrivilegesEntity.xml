@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="com.entities.SchemaPrivilegesEntity">
+        <table name="SCHEMA_PRIVILEGES" schema="information_schema" catalog=""/>
+        <attributes>
+            <basic name="grantee">
+                <column name="GRANTEE" precision="-1"/>
+            </basic>
+            <basic name="tableCatalog">
+                <column name="TABLE_CATALOG" precision="-1"/>
+            </basic>
+            <basic name="tableSchema">
+                <column name="TABLE_SCHEMA" precision="-1"/>
+            </basic>
+            <basic name="privilegeType">
+                <column name="PRIVILEGE_TYPE" precision="-1"/>
+            </basic>
+            <basic name="isGrantable">
+                <column name="IS_GRANTABLE" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

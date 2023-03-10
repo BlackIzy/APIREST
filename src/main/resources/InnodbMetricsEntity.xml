@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="com.entities.InnodbMetricsEntity">
+        <table name="INNODB_METRICS" schema="information_schema" catalog=""/>
+        <attributes>
+            <basic name="name">
+                <column name="NAME" precision="-1"/>
+            </basic>
+            <basic name="subsystem">
+                <column name="SUBSYSTEM" precision="-1"/>
+            </basic>
+            <basic name="count">
+                <column name="COUNT" precision="-1"/>
+            </basic>
+            <basic name="maxCount">
+                <column name="MAX_COUNT" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="minCount">
+                <column name="MIN_COUNT" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="avgCount">
+                <column name="AVG_COUNT" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="countReset">
+                <column name="COUNT_RESET" precision="-1"/>
+            </basic>
+            <basic name="maxCountReset">
+                <column name="MAX_COUNT_RESET" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="minCountReset">
+                <column name="MIN_COUNT_RESET" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="avgCountReset">
+                <column name="AVG_COUNT_RESET" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="timeEnabled">
+                <column name="TIME_ENABLED" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="timeDisabled">
+                <column name="TIME_DISABLED" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="timeElapsed">
+                <column name="TIME_ELAPSED" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="timeReset">
+                <column name="TIME_RESET" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="enabled">
+                <column name="ENABLED" precision="-1"/>
+            </basic>
+            <basic name="type">
+                <column name="TYPE" precision="-1"/>
+            </basic>
+            <basic name="comment">
+                <column name="COMMENT" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

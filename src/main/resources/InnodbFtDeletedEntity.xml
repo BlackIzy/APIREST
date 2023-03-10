@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="com.entities.InnodbFtDeletedEntity">
+        <table name="INNODB_FT_DELETED" schema="information_schema" catalog=""/>
+        <attributes>
+            <basic name="docId">
+                <column name="DOC_ID" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

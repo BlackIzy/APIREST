@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="com.entities.ParametersEntity">
+        <table name="PARAMETERS" schema="information_schema" catalog=""/>
+        <attributes>
+            <basic name="specificCatalog">
+                <column name="SPECIFIC_CATALOG" precision="-1"/>
+            </basic>
+            <basic name="specificSchema">
+                <column name="SPECIFIC_SCHEMA" precision="-1"/>
+            </basic>
+            <basic name="specificName">
+                <column name="SPECIFIC_NAME" precision="-1"/>
+            </basic>
+            <basic name="ordinalPosition">
+                <column name="ORDINAL_POSITION" precision="-1"/>
+            </basic>
+            <basic name="parameterMode">
+                <column name="PARAMETER_MODE" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="parameterName">
+                <column name="PARAMETER_NAME" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="dataType">
+                <column name="DATA_TYPE" precision="-1"/>
+            </basic>
+            <basic name="characterMaximumLength">
+                <column name="CHARACTER_MAXIMUM_LENGTH" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="characterOctetLength">
+                <column name="CHARACTER_OCTET_LENGTH" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="numericPrecision">
+                <column name="NUMERIC_PRECISION" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="numericScale">
+                <column name="NUMERIC_SCALE" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="datetimePrecision">
+                <column name="DATETIME_PRECISION" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="characterSetName">
+                <column name="CHARACTER_SET_NAME" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="collationName">
+                <column name="COLLATION_NAME" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="dtdIdentifier">
+                <column name="DTD_IDENTIFIER" precision="-1"/>
+            </basic>
+            <basic name="routineType">
+                <column name="ROUTINE_TYPE" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

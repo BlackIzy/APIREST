@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="com.entities.ConcertEntity">
+        <table name="concert" schema="zfm1-zberteba0_2" catalog=""/>
+        <attributes>
+            <id name="codeConcert">
+                <column name="code_concert" precision="1"/>
+            </id>
+            <basic name="date">
+                <column name="date" precision="-1"/>
+            </basic>
+            <basic name="heure">
+                <column name="heure" precision="-1"/>
+            </basic>
+            <basic name="duree">
+                <column name="duree" precision="-1"/>
+            </basic>
+            <basic name="codeArtiste">
+                <column name="code_artiste" nullable="false" precision="1"/>
+            </basic>
+            <basic name="codeGroupe">
+                <column name="code_groupe" nullable="false" precision="1"/>
+            </basic>
+            <basic name="codeSoiree">
+                <column name="code_soiree" precision="1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

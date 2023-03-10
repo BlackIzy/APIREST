@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="com.entities.ReferentialConstraintsEntity">
+        <table name="REFERENTIAL_CONSTRAINTS" schema="information_schema" catalog=""/>
+        <attributes>
+            <basic name="constraintCatalog">
+                <column name="CONSTRAINT_CATALOG" precision="-1"/>
+            </basic>
+            <basic name="constraintSchema">
+                <column name="CONSTRAINT_SCHEMA" precision="-1"/>
+            </basic>
+            <basic name="constraintName">
+                <column name="CONSTRAINT_NAME" precision="-1"/>
+            </basic>
+            <basic name="uniqueConstraintCatalog">
+                <column name="UNIQUE_CONSTRAINT_CATALOG" precision="-1"/>
+            </basic>
+            <basic name="uniqueConstraintSchema">
+                <column name="UNIQUE_CONSTRAINT_SCHEMA" precision="-1"/>
+            </basic>
+            <basic name="uniqueConstraintName">
+                <column name="UNIQUE_CONSTRAINT_NAME" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="matchOption">
+                <column name="MATCH_OPTION" precision="-1"/>
+            </basic>
+            <basic name="updateRule">
+                <column name="UPDATE_RULE" precision="-1"/>
+            </basic>
+            <basic name="deleteRule">
+                <column name="DELETE_RULE" precision="-1"/>
+            </basic>
+            <basic name="tableName">
+                <column name="TABLE_NAME" precision="-1"/>
+            </basic>
+            <basic name="referencedTableName">
+                <column name="REFERENCED_TABLE_NAME" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

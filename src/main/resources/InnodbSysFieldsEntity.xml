@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="com.entities.InnodbSysFieldsEntity">
+        <table name="INNODB_SYS_FIELDS" schema="information_schema" catalog=""/>
+        <attributes>
+            <basic name="indexId">
+                <column name="INDEX_ID" precision="-1"/>
+            </basic>
+            <basic name="name">
+                <column name="NAME" precision="-1"/>
+            </basic>
+            <basic name="pos">
+                <column name="POS" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

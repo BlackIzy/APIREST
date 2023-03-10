@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="com.entities.InnodbBufferPageLruEntity">
+        <table name="INNODB_BUFFER_PAGE_LRU" schema="information_schema" catalog=""/>
+        <attributes>
+            <basic name="poolId">
+                <column name="POOL_ID" precision="-1"/>
+            </basic>
+            <basic name="lruPosition">
+                <column name="LRU_POSITION" precision="-1"/>
+            </basic>
+            <basic name="space">
+                <column name="SPACE" precision="-1"/>
+            </basic>
+            <basic name="pageNumber">
+                <column name="PAGE_NUMBER" precision="-1"/>
+            </basic>
+            <basic name="pageType">
+                <column name="PAGE_TYPE" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="flushType">
+                <column name="FLUSH_TYPE" precision="-1"/>
+            </basic>
+            <basic name="fixCount">
+                <column name="FIX_COUNT" precision="-1"/>
+            </basic>
+            <basic name="isHashed">
+                <column name="IS_HASHED" precision="-1"/>
+            </basic>
+            <basic name="newestModification">
+                <column name="NEWEST_MODIFICATION" precision="-1"/>
+            </basic>
+            <basic name="oldestModification">
+                <column name="OLDEST_MODIFICATION" precision="-1"/>
+            </basic>
+            <basic name="accessTime">
+                <column name="ACCESS_TIME" precision="-1"/>
+            </basic>
+            <basic name="tableName">
+                <column name="TABLE_NAME" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="indexName">
+                <column name="INDEX_NAME" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="numberRecords">
+                <column name="NUMBER_RECORDS" precision="-1"/>
+            </basic>
+            <basic name="dataSize">
+                <column name="DATA_SIZE" precision="-1"/>
+            </basic>
+            <basic name="compressedSize">
+                <column name="COMPRESSED_SIZE" precision="-1"/>
+            </basic>
+            <basic name="compressed">
+                <column name="COMPRESSED" precision="-1"/>
+            </basic>
+            <basic name="ioFix">
+                <column name="IO_FIX" precision="-1"/>
+            </basic>
+            <basic name="isOld">
+                <column name="IS_OLD" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="freePageClock">
+                <column name="FREE_PAGE_CLOCK" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
