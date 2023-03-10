@@ -1,4 +1,4 @@
-# Projet  Quizz
+# APIREST
 ## _Bakary BERTE, Abdoulaye BERTE_
 ## Techno  - ✨JAVA✨ - ✨SPRING✨ - ✨JPA-HIBERNATE✨
 ## Description 
